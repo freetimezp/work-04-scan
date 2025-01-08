@@ -216,3 +216,151 @@ body {
     border-radius: 4px;    
     transform: translateY(-7px);
 }
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+#content .content-single {
+    width: 100%;
+    background-color: #d7f3d9;
+}
+
+.content-single .single-top {
+    padding: 40px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-single .single-bottom {
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-single .single-top .name {
+    font-size: 35px;
+    font-weight: 700;
+    color: #7a7474;
+}
+
+.content-single .single-top .btn-trash-wrapper {
+    border: 2px solid #949090;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.content-single .single-top .bi-trash {
+    font-size: 30px;
+    color: #949090;
+}
+
+.content-single .single-bottom input {
+    padding: 2px 5px;
+    text-align: right;
+    border: 2px solid #dfdbdb;
+    border-radius: 4px;
+    color: #8d8888;
+    outline: none;
+    max-width: 100px;
+    margin-inline: 4px;
+    font-size: 20px;
+}
+
+.content-single .single-bottom input::placeholder {
+    color: #8d8888;
+}
+
+.content-single .single-bottom .cost span {
+    font-size: 20px;
+    color: #8d8888;
+}
+
+.content-single .single-bottom .weight {
+    display: flex;
+    align-items: center;
+}
+
+.content-single .single-bottom .weight input {
+    font-weight: 700;
+    text-align: center;
+}
+
+.content-single .single-bottom .weight input::placeholder {
+    font-weight: 700;
+}
+
+.content-single .single-bottom .weight .weight-minus,
+.content-single .single-bottom .weight .weight-plus, 
+.content-single .single-bottom .weight .weight-basket,
+.content-single .single-bottom .discount .choose-btn {
+    display: inline-block;
+    width: 38px !important;
+    height: 38px !important;
+    border: 2px solid #dfdbdb;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    color: #8d8888;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-inline: 4px;
+    box-shadow: 1px 1px 1px rgba(130, 130, 130, 0.22);
+}
+
+.content-single .single-bottom .discount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.content-single .single-bottom .discount .text {
+    color: #8d8888;
+    font-weight: 600;
+}
+
+.content-single .single-bottom .discount input {
+    font-weight: 700;
+}
+
+.content-single .single-bottom .discount .discount-percent {
+    display: inline-block;
+    width: 38px !important;
+    height: 38px !important;
+    border: 2px solid #dfdbdb;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px rgba(130, 130, 130, 0.22);
+}
+
+.content-single .single-bottom .discount .choose-btn {
+    font-size: 14px;
+    color: #a09d9d;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(130, 130, 130, 0.22);
+}
+
+.content-single .single-bottom .seller {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.content-single .single-bottom .seller .bi-person {
+    font-size: 24px;
+}
+
