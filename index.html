@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <!-- Navbar start -->
-    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <div class="wrapper">
+        <!-- Navbar start -->
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary">
             <a class="navbar-item" href="#">
                 <i class="bi bi-percent"></i>
                 <span>Знижка</span>
@@ -43,7 +43,7 @@
                     <li class="nav-item">
                         <a class="navbar-item nav-link active" href="#" aria-current="page">
                             <i class="bi bi-upc-scan"></i>
-                            <span>Знайти у чеці</span>
+                            <span>Знайти у чеку</span>
                         </a>
                     </li>
                 </ul>
@@ -83,7 +83,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link navbar-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                        aria-expanded="false" style="margin-right: 0;">
                         Ще
                     </a>
                     <ul class="dropdown-menu dropdown-to-right">
@@ -98,9 +98,90 @@
                     </ul>
                 </li>
             </ul>
+        </nav>
+        <!-- Navbar end -->
+
+        <div id="main-content">
+            <div id="content">
+
+            </div>
+
+            <!-- Sidebar start -->
+            <div id="sidebar">
+                <div class="sidebar-top">
+                    <div class="sidebar-row">
+                        <span>Без знижки:</span>
+                        <span class="text-end" id="no_discount">23 648,00
+                            грн.</span>
+                    </div>
+                    <div class="sidebar-row">
+                        <span>Знижка:</span>
+                        <span class="text-end" id="discount">0,00
+                            грн.</span>
+                    </div>
+
+                    <hr style="opacity: 0.2;">
+
+                    <div class="sidebar-row top-2">
+                        <span>Всього:</span>
+                        <span class="text-end" id="total_pay">23 648,00
+                            грн.</span>
+                    </div>
+                    <div class="sidebar-row top-2">
+                        <span>Здача:</span>
+                        <span class="text-end" id="rest_money">0,00
+                            грн.</span>
+                    </div>
+
+                    <hr style="opacity: 0.2;">
+
+                    <div class="sidebar-btns">
+                        <button>
+                            <span>F7</span>
+                            <span>Готівка</span>
+                        </button>
+                        <button>
+                            <span>F6</span>
+                            <span>Карта</span>
+                        </button>
+                    </div>
+
+                    <div class="sidebar-inputs">
+                        <div class="sidebar-row">
+                            <span>Готівка:</span>
+                            <div>
+                                <input type="text" placeholder="5 000,00" value="5 000,00">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar-row">
+                            <span>Карта:</span>
+                            <div>
+                                <input type="text" placeholder="18 648,00" value="18 648,00">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-bottom">
+                    <div class="sidebar-checkout-btns">
+                        <div class="sidebar-user-btn">
+                            <i class="bi bi-person-fill"></i>
+                            <div class="sidebar-user-check-btn">
+                                <i class="bi bi-check"></i>
+                                <span></span>
+                            </div>
+                        </div>
+                        <button>
+                            Отримати чек
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar end -->
         </div>
-    </nav>
-    <!-- Navbar end -->
+    </div>
 
 
 
