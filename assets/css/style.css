@@ -10,3 +10,54 @@ a {
     text-decoration: none;
 }
 
+body, html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-item {
+    border: 1px solid #e1dddd;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #e1dddd;
+    margin: 2px 5px;
+}
+
+
+.navbar-item i,
+.navbar-item span {
+    color: #000;
+}
+
+.navbar-item span {
+    font-size: 18px;
+}
+
+
+.dropdown-menu[data-bs-popper].dropdown-to-right {
+    left: unset;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
